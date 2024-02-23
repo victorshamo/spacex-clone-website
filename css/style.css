@@ -114,7 +114,7 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
-  animation-fill-mode: both;  /* Stop from showing at start */
+  animation-fill-mode: both; /* Stop from showing at start */
 }
 
 .section-inner a {
@@ -125,6 +125,26 @@ section {
 /* Background images */
 .section-a {
   background-image: url("../img/section-a.webp");
+}
+
+.section-b {
+  background-image: url("../img/section-b.webp");
+}
+
+.section-c {
+  background-image: url("../img/section-c.webp");
+}
+
+.section-d {
+  background-image: url("../img/section-d.webp");
+}
+
+.section-e {
+  background-image: url("../img/section-e.webp");
+}
+
+.section-f {
+  background-image: url("../img/section-f.webp");
 }
 
 .btn {
