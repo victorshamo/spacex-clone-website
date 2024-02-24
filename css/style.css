@@ -221,6 +221,55 @@ footer ul li a:hover {
   color: #aaa;
 }
 
+/* Hamburguer Menu */
+.hamburguer {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+}
+
+.hamburguer-top,
+.hamburguer-middle,
+.hamburguer-bottom {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+.hamburguer-middle {
+  transform: translateY(5px);
+}
+
+.hamburguer-bottom {
+  transform: translateY(10px);
+}
+
+/* Transition hamburguer to X when open */
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburguer-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburguer-middle {
+  display: none;
+}
+
+.open .hamburguer-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
 /* Animations */
 @keyframes fadeInUp {
   0% {
@@ -251,14 +300,14 @@ footer ul li a:hover {
 
 /* Media Queries */
 
-@media(max-width: 960px) {
+@media (max-width: 960px) {
   /* Hide desktop menu */
   .desktop-main-menu {
     display: none;
   }
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   .section-inner {
     bottom: 75px;
     left: 20px;
